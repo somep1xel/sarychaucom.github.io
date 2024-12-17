@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Lunch — Maxim Sarychau</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="shortcut icon" href="/favicon.png">
+    <meta property="og:title" content="Lunch — Maxim Sarychau" />
+    <meta property="og:image" content="/photos/msc/lunch_video.jpg" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <div class="lunch page-text container about">
+      <section class="menu">
+        @@include('scripts/templates/menu.html', {"lunch": "active"})
+      </section>
+
+      <section class="content">
+        <div class="hero-image" style="background-image:url(/photos/msc/lunch_video.jpg);">
+          <div class="headline">
+            <h1>Lunch</h1>
+            <p class="dates">VIDEO</p>
+          </div>
+        </div>
+        <div class="text centered">
+          <p>
+            Video "Lunch" shows essentially an impossible situation. Children refugees from Chechnya, have a lunch in the train station restaurant in Brest (Belarus). They and their families live in the waiting room in the same building, some for a few months.
+            <br><br>
+            Speaking about migration crisis on the Belarusian-Polish border, Maxim Sarychau addresses the problem of childhood, which forcedly limited by station walls and devoid of at least some certainty. Chechen refugees who have spent all their money on ineffectual attempts to obtain asylum to Poland, have no other possibilities, how to spend their time here, relying only on the support of compatriots and volunteers.
+            <br><br>
+            Naturally, in such a situation, the refined and richly decorated soviet interior, tables with food, waiter - all of this are fully unachievable. While they are living for months literally behind the wall, they remain strangers in this room. Sarychau put such a contrast to the center of their work encourages the viewer to independently determine the normality of such a dinner.
+            <br><br>
+            Video became a result of the work of the artist and volunteers from refugee families. Almost all of them limit themselves to the food. Perspective from which camera captures scene is caused by security measures because the majority of refugees presented in the restaurant wished to remain behind the scenes.
+            <br>
+            <b><p>Aliaxey Talstou</p></b>
+          </p>
+        </div>
+        <div class="video">
+          <iframe src="https://player.vimeo.com/video/207036222?title=0&byline=0&portrait=0" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <div class="text">
+        <h2>CREDITS</h2>
+        <ul class="credits"></ul>
+          <li>
+            <p><strong>Video / Direction</strong><br>Maxim Sarychau</p></li>
+          <li>
+            <p><strong>Location</strong><br>Brest / Belarus</p>
+          </li>
+          <li>
+            <p><strong>Year</strong><br>2016</p>
+          </li>
+        </div>
+      </section>
+    </div>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/models/slider-data.js"></script>
+    <script src="scripts/views/slider.js"></script>
+    <script src="scripts/page-slider.js"></script>
+    <script src="scripts/router.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

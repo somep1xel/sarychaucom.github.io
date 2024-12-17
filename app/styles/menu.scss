@@ -1,0 +1,276 @@
+/*
+* Menu
+*
+*/
+
+.menu {
+    width: 100%;
+    height: 80px;
+    display: block;
+    z-index: 2;
+    position: fixed;
+    .header{
+        height: 80px;
+        width: 100%;
+        position: absolute;
+        background-color: $bg-header-gray;
+        top: 0;
+        .logo{
+            background-image: url('/images/logo.svg');
+            background-repeat: no-repeat;
+            width: 115px;
+            height: 39px;
+            float: left;
+            background-size: contain;
+            margin: 20px 0 0 30px;
+        }
+        .hamburger{
+            float: right;
+            border: solid 1px transparent;
+
+            height: 38px;
+            width: 38px;
+            margin-top: 18px;
+            margin-right: 10px;
+            z-index: 1000;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            top: 0;
+            right: 0;
+            transition: all 0.1s cubic-bezier(0.7, 0.01, 0.3, 1);
+
+            .lines{
+                width: 20px;
+                height: 2px;
+                margin: 17px auto 17px 9px;
+                background-color: $link-gray;
+
+                &:before,
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 20px;
+                    height: 2px;
+                    background-color: $link-gray;
+                    position: relative;
+                    transition: all 0.3s;
+                }
+                &:after{
+                    top: 6px;
+                }
+                &:before{
+                    top: -8px;
+                }
+            }
+
+        }
+    }
+    .container{
+        display: none;
+        background-color: $bg-gray;
+        overflow: auto;
+        height: calc(100% - 180px);
+        ul{
+            display: block;
+            width: 280px;
+            margin: 0 auto;
+            padding-bottom: 30px;
+            list-style-type: none;
+        }
+        li{
+            line-height: 35px;
+            text-align: center;
+            &.active a{
+                color: $link-hover-blue;
+            }
+            a{
+                color: $light-black;
+                text-decoration: none;
+                font-size: 18px;
+                font-family: $helvetica;
+                height: 35px;
+                display: block;
+            }
+        }
+        .projects:before,
+        .multimedia:before{
+            display: block;
+            text-transform: uppercase;
+            font-size: 10px;
+            letter-spacing: 2px;
+            color: $category-gray;
+            font-family: $helvetica-roman;
+            text-align: center;
+            margin-bottom: 10px;
+        };
+        .projects:before{
+            content: 'photo';
+        }
+        .multimedia:before{
+            content: 'video';
+        }
+        .msc {
+            padding-top: 115px;
+            color: $msc-gray;
+            li{
+                height: 35px;
+                a{
+                    height: 35px;
+                    display: block;
+                    font-size: 12px;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    font-family: $helvetica-roman;
+                    margin: 3px 0;
+                }
+                &.active,
+                &:hover{
+                     &:after{
+                        margin-top: -31px;
+                        left: 250px;
+                    }
+                };
+            }
+        }
+    }
+    &.open{
+        height: calc(100% - 120px);
+        width: 100%;
+        padding-top: 120px;
+        display: inline-block;
+        position: absolute;
+        background-color: $bg-gray;
+        .header{
+            .hamburger{
+                border: solid 1px $link-gray;
+            }
+        }
+        .container{
+            display: block;
+            height: auto;
+            .msc{
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+@include breakpoint(firstmenuheight) {
+    .menu{
+        .container{
+            li{
+                line-height: 22px;
+                a{
+                    font-size: 15px;
+                    height: 22px;
+                }
+            }
+            .msc {
+                li {
+                    height: 22px;
+                    a{
+                        font-size: 11px;
+                    }
+                }
+            }
+            ul.projects:before,
+            ul.multimedia:before{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@include breakpoint(large) {
+    .menu {
+        width: 300px;
+        height: 100%;
+        float: left;
+        background-color: $bg-gray;
+        &.view-mode{
+            left: -250px;
+            transition-property: left;
+            transition-duration: 300ms;
+
+            .container{
+                ul li.active:before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 16px;
+                    height: 11px;
+                    margin-top: 13px;
+                    left: 267px;
+                    background-image: url('/images/hamburger.png');
+                    background-repeat: no-repeat;
+                    z-index: 2;
+                };
+            }
+        }
+        .header{
+            position: relative;
+            height: 180px;
+            width: 100%;
+            .logo{
+                width: 202px;
+                height: 64px;
+                margin-top: 100px;
+                margin-left: 45px;
+            }
+            .hamburger{
+                display: none;
+            }
+        }
+        .container{
+            display: block;
+            padding-top: 30px;
+            padding-left: 50px;
+            background-color: $bg-header-gray;
+            ul{
+                width: 100%;
+                padding-bottom: 45px;
+                li{
+                    text-align: left;
+                    a:hover{
+                        color: $link-hover-blue;
+                    };
+                    &.active,
+                    &:hover{
+                         &:after{
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            margin-top: -27px;
+                            left: 299px;
+                            width: 16px;
+                            height: 24px;
+                            background-image: url('/images/menu_pointer.png');
+                            background-repeat: no-repeat;
+                            z-index: 2;
+                        }
+                    }
+                }
+            }
+            .projects:before,
+            .multimedia:before
+            {
+                    text-align: left;
+                    margin-left: -15px;
+                    margin-bottom: 25px;
+            }
+            .msc{
+                width: 250px;
+                bottom: 0;
+                padding: 0;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+@include breakpoint(widthheightxlarge) {
+  .menu .container .msc{
+		position: absolute;
+	}
+}

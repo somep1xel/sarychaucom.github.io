@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Portraits — Maxim Sarychau</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="shortcut icon" href="/favicon.png">
+    <meta property="og:title" content="Portraits — Maxim Sarychau" />
+    <meta property="og:image" content="http://sarychau.com/photos/portraits/sarychauportraits_04.jpg" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <div class="page-slider container">
+        <section class="menu">
+          @@include('scripts/templates/menu.html', {"portraits": "active"})
+        </section>
+
+        <section class="content">
+          <div class="slider fading">
+            <ul class="slides" style="left:0">
+              <li class="item">
+                <img src="/photos/i-dont-want/1_SAM20181201TORTURES00833.jpg"/>
+                <div class="meta">From project "I don't want to kill you" / 2019</div>
+              </li>
+            <ul class="slides" style="left:0">
+              <li class="item">
+                <img src="/photos/i-dont-want/3_SAM20181202TORTURES00973.jpg"/>
+                <div class="meta">From project "I don't want to kill you" / 2019</div>
+              </li>
+            <ul class="slides" style="left:0">
+              <li class="item">
+                <img src="/photos/portraits/sarychauportraits_01.jpg"/>
+                <div class="meta">From onging project "I can hardly hear birds" / 2017 - ...</div>
+              </li>
+              <li class="item">
+                <img src="/photos/portraits/sarychauportraits_02.jpg"/>
+                <div class="meta">From project <a href="/cold-spring.html">Cold Spring</a> / 2017</div>
+              </li>
+              <li class="item">
+                <img src="/photos/portraits/sarychauportraits_03.jpg"/>
+                <div class="meta">From project <a href="/stolen-days.html">Stolen Days</a> / 2015</div>
+              </li>
+              <li class="item">
+                <img src="/photos/portraits/sarychauportraits_05.jpg"/>
+                <div class="meta">Assignment for Business Punk magazine (DE) / 2018</div>
+              </li>
+              <li class="item">
+                <img src="/photos/portraits/sarychauportraits_06.jpg"/>
+                <div class="meta">From project <a href="/cold-spring.html">Cold Spring</a> / 2017</div>
+              </li>
+              <li class="item">
+                <img src="/photos/portraits/sarychauportraits_07.jpg"/>
+                <div class="meta">From project <a href="/stolen-days.html">Stolen Days</a> / 2015</div>
+              </li>
+              <li class="item">
+                <img src="/photos/portraits/sarychauportraits_08.jpg"/>
+                <div class="meta">From project <a href="/stolen-days.html">Stolen Days</a> / 2015</div>
+              </li>
+              <li class="item">
+                <img src="/photos/portraits/sarychauportraits_09.jpg"/>
+                <div class="meta">From project <a href="/cold-spring.html">Cold Spring</a> / 2017</div>
+              </li>
+              <li class="item">
+                <img src="/photos/portraits/sarychauportraits_10.jpg"/>
+              </li>
+              <li class="item">
+                <img src="/photos/portraits/sarychauportraits_11.jpg"/>
+                <div class="meta">From project <a href="/voices-of-generation-l.html">Voices of Generation L</a> / 2015</div>
+              </li>
+              <li class="item">
+                <img src="/photos/portraits/sarychauportraits_12.jpg"/>
+                <div class="meta">Assignment for Meduza / 2015</div>
+              </li>
+              <li class="item">
+                <img src="/photos/portraits/sarychauportraits_13.jpg"/>
+                <div class="meta">Assignment for Meduza / 2016</div>
+              </li>
+            </ul>
+            <div class="arrow back"></div>
+            <div class="arrow forward"></div>
+            <div class="pager">
+              <div class="container">
+                <p class="current"></p>
+                <p class="all"></p>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/models/slider-data.js"></script>
+    <script src="scripts/views/slider.js"></script>
+    <script src="scripts/page-slider.js"></script>
+    <script src="scripts/router.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

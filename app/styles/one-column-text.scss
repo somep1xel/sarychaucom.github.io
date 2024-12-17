@@ -1,0 +1,41 @@
+.one-column-text {
+  width: 90%;
+  h1{
+      color:  $black;
+      margin-top: 28px;
+      font-size: 25px;
+      margin-bottom: 15px;
+      line-height: 25.88px;
+      text-align: left;
+  }
+  .subheader{
+      text-align: left;
+      display: block;
+      padding-bottom: 20px;
+      font-family: $helvetica-thin;
+  }
+  .text{
+      width: 100%;
+      p {
+          font-size: 16px;
+          line-height: 22px;
+      }
+  }
+  .text-slide{
+    padding: 0 5%;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
+  }
+}
+
+.page-slider {
+  .one-column-text {
+    .text-slide{
+      padding: 100px 50px;
+      .internal {
+        
+      }
+    }
+  }
+}

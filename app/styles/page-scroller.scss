@@ -1,0 +1,196 @@
+.page-scroller{
+
+    &.container{
+        overflow: auto;
+        height: 100%;
+        .menu{
+            &.transparent{
+                opacity: 0.2;
+            }
+        }
+    }
+    .scroller {
+        height: 100%;
+        background-color: $white;
+        .slides {
+            height: 100%;
+            overflow: auto;
+           // padding-top: 80px;
+            li{
+                width: 100%;
+                display: inline-block;
+                padding-bottom: 50px;
+
+                &.hero-image{
+                    .arrow{
+                        background-image: url(/images/arrow-scroll-white.png);
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        -webkit-transform: rotate(180deg);
+                        -ms-transform: rotate(180deg);
+                        transform: rotate(180deg);
+                        -moz-transform: rotate(180deg);
+                        -o-transform: rotate(180deg);
+                        bottom: 0;
+                        display: block;
+                        height: 6.25em;
+                        width: 18.75em;
+                        margin: 0 auto;
+                        position: relative;
+                        top: 100%;
+                        z-index: 1;
+                        margin-top: -18em;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    h1{
+                        margin-top: 100px;
+                    }
+                }
+
+                 &.description {
+                    margin: 50px 0;
+                 }
+                .text {
+                    float: left;
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    h1,
+                    h2{
+                        font-family: $helvetica;
+                        color:  $black;
+                        font-size: 25px;
+                        margin-bottom: 15px;
+                        line-height: 25.88px;
+                        text-align: left;
+                        letter-spacing: 2px;
+                    }
+                    h2{
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                        line-height: 20px;
+                        letter-spacing: 0.7px;
+                        padding: 0 20px;
+                    }
+                    p {
+                        font-size: 15px;
+                        line-height: 17px;
+                        float: left;
+                        //margin-top: 32px;
+                        margin-top: 10px;
+                        letter-spacing: 0.3px;
+                        color: $black;
+                        font-family: $helvetica;
+                        text-align: left;
+                        padding: 0 20px;
+                    }
+                    i{
+                        padding-top: 25px;
+                        padding-left: 20px;
+                        display: inline-block;
+                        font-size: 15px;
+                        letter-spacing: 0.1px;
+                    }
+                }
+                .image {
+                    float: right;
+                    width: 100%;
+                    padding-top: 15px;
+                    margin: 0;
+                    text-align: center;
+                    img{
+                        width: calc(100% - 40px);
+                    }
+                    .under-image-text{
+                        max-width: 800px;
+                        text-align: left;
+                        padding: 0 5%;
+                        margin-top: 30px;
+                        p {
+                            font-family: $helvetica-thin;
+                            letter-spacing: 1px;
+                            margin-top: 10px;
+                            line-height: 20px;
+                        }
+                        &.centered{
+                          margin: 0 auto;
+                        }
+                      }
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(middle) {
+    .page-scroller{
+        .scroller{
+            .slides li {
+                padding-bottom: 100px;
+                .text {
+                        /* width: 600px;
+                        position: relative;
+                        margin: 0 auto;
+                        h1{
+                            padding: 0 20px;
+                        }
+                        p{
+                            width: 250px;
+                            padding: 0 20px;
+                        } */
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(large) {
+    .page-scroller{
+        &.container {
+            .content{
+                padding-top: 0;
+            }
+        }
+        .scroller {
+            .slides {
+                //padding-top: 0;
+                li{
+                    &.hero-image{
+                        .headline{
+                            //padding-left: 300px;
+                        }
+                        .arrow{
+                            margin-top: -15em;
+                        }
+                    }
+                     &.description {
+                        margin: 100px 0;
+                        .two-column-text{
+                            width: 65%;
+                        }
+                        .text{
+                          width: 100%;
+                        }
+                    }
+                   .image{
+                        width: 65%;
+                        margin-right: 5%;
+                        img{
+                            width: 100%;
+                        }
+                        .under-image-text{
+                          padding: 0;
+                        }
+                    }
+                    .text{
+                        width: 20%;
+                        padding-left: 5%;
+                        padding-right: 5%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+.page-text.container{
+    .content{
+        overflow: auto;
+        .hero-image{
+            margin-top: 80px;
+        }
+        .text{
+            padding: 0 5%;
+            padding-top: 125px;
+            padding-bottom: 50px;
+            max-width: 800px;
+            text-align: left;
+            p{
+                font-size: 16px;
+                line-height: 24px;
+                font-family: $helvetica-thin;
+                letter-spacing: 1px;
+            }
+            &.centered{
+              margin: 0 auto;
+            }
+        }
+        h1{
+            text-transform: uppercase;
+            margin-bottom: 75px;
+            padding: 0;
+            letter-spacing: 3px;
+        }
+        h2{
+            margin-bottom: 30px;
+        }
+        h3{
+            color: $light-gray;
+        }
+        ul li{
+            margin-bottom: 70px;
+            ul {
+                li {
+                    margin-bottom: 5px;
+                    display: inline-block;
+                    width: 100%;
+                    font-family: $helvetica-thin;
+                    .key{
+                        float: left;
+                        padding-right: 20px;
+                        text-align: right;
+                        width: 15%;
+                        font-size: 10px;
+                        color: $msc-gray;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        font-family: $helvetica;
+                        line-height: 16px;
+                    }
+                    .value {
+                        float: left;
+                        letter-spacing: 1px;
+                    }
+                    p{
+                        margin-top: 0;
+                    }
+                }
+                &.prefixed{
+                    li{
+                        padding-left: 5px;
+                        &:before{
+                            content: '';
+                            float: left;
+                            padding: 0 20px;
+                            line-height: 23px;
+                        };
+                        p{
+                            padding-left: 46px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(middle) {
+    .page-text.container{
+        .content{
+            .hero-image{
+                margin-top: 0;
+            }
+            ul li{
+                    &.contact ul{
+                        margin-left: -36px;
+                    }
+                    ul {
+                        &.prefixed{
+                            li{
+                                padding-left: 30px;
+                                &:before{
+                                    content: '–';
+                                };
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}

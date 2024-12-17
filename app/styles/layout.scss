@@ -1,0 +1,157 @@
+/*
+* Styles for global layout, they are common for all pages
+*
+*/
+
+* {
+    font-size: 100%;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html{
+    height: 100%;
+}
+
+body{ 
+    height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: $light-black;
+    &:hover{
+        color: $link-hover-blue;
+    }
+}
+
+h1{
+    font-family: $helvetica-thin;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 20px;
+    color:$header-black;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-family: $helvetica;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 20px;
+    color:$header-black;
+    letter-spacing: 1.5px;
+}
+
+h3{
+    font-family: $helvetica;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+p {           
+    font-family: $helvetica;
+    color: $black;
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: 25px;
+}
+
+body > span {
+    display: none !important;
+}
+
+.container{
+    overflow: hidden;
+    height: 100%;
+    .content{
+        height: calc(100%);
+        overflow:hidden;
+        ul,
+        li{
+            list-style-type: none;
+        }
+    }
+}
+
+.hero-image{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    display: block;
+    .headline{
+        position: relative;
+        margin: 0 auto;
+        top: 31%;
+        margin-top: -30px;
+        width: 300px;
+        display: block;
+        text-align: center;
+        h1{
+            margin-top: 28px;
+            font-size: 50px;
+            margin-bottom: 15px;
+            line-height: 25.88px;
+            text-align: center;
+            color: $white;
+            letter-spacing: 2px;
+            line-height: 45px;
+        }
+        .dates{
+            font-size: 14px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            padding-top: 5px;
+            color: $category-gray;
+            font-family: $helvetica;
+        }
+    }
+}
+
+.video{
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    min-height: 480px;
+    &.black{
+    background-color: $black;
+  }
+}
+
+@include breakpoint(large) {
+    .container{
+        .content{
+            height: 100%;
+            width: calc(100% - 300px);
+            float: right;
+            padding-top: 0;
+            &.wide-mode{
+                transition-property: width;
+                transition-duration: 300ms;
+                width: calc(100% - 50px);
+            }            
+        }
+        .hero-image .headline{
+            top: 45%;
+        }
+    }
+}
+
+.non-belarus {
+	display: none;
+}

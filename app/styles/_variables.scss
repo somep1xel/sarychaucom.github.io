@@ -1,0 +1,35 @@
+/* 
+* Variables for breakpoints, colors, fonts, etc.
+*
+*/
+
+// Breakpoints
+
+$small: 320px;
+$middle: 600px;
+$large: 1000px;
+$x-large: 1400px;
+$xx-large: 1700px;
+$height-large: 700px;
+$height-x-large: 1400px;
+$menu-first-desktop-height: 720px;
+$menu-second-desktop-height: 600px;
+
+// Colors
+$white: #ffffff;
+$black: #000000;
+$light-black: #3a3a3a;
+$header-black: #444444;
+$bg-gray: #ddd;
+$bg-header-gray: #f3f3f3;
+$link-gray: #636363;
+$light-gray: #bebebe;
+$category-gray: #ababab;
+$msc-gray: #888888;
+$link-hover-blue: #7694b2;
+
+// Fonts
+$helvetica: HelveticaNeueCyr-Light;
+$helvetica-italic: HelveticaNeueCyr-LightItalic;
+$helvetica-roman: HelveticaNeueCyr-Roman;
+$helvetica-thin: HelveticaNeueCyr-Thin;

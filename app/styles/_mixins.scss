@@ -1,0 +1,46 @@
+/* 
+* Mixins
+*
+*/
+
+/* 
+* Breakpoint for responsive behaviour, looking at width of viewport
+*/
+@mixin breakpoint($point) {
+  @if $point == small {
+    @media (min-width: $small) { @content; }
+  }
+  @else if $point == middle {
+    @media (min-width: $middle) { @content; }
+  }
+  @else if $point == large {
+    @media (min-width: $large) { @content; }
+  }    
+  @else if $point == x-large {
+    @media (min-width: $x-large) { @content; }
+  }    
+  @else if $point == xx-large {
+    @media (min-width: $xx-large) { @content; }
+  }  
+  @else if $point == heightlarge {
+    @media (min-height: $height-large) { @content; }
+  }
+  @else if $point == widthheightxlarge {
+    @media (min-width: $x-large) and (min-height: $height-x-large) { @content; }
+  }
+  @else if $point == firstmenuheight {
+    @media (max-height: $menu-first-desktop-height) { @content; }
+  }
+  @else if $point == secondmenuheight {
+    @media (max-height: $menu-second-desktop-height) { @content; }
+  }
+}
+
+@function svgArrow($color) {
+  @if $color == 'white' {
+    @return url('data:image/svg+xml;utf8;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNjBweCIgaGVpZ2h0PSI4MHB4IiB2aWV3Qm94PSIwIDAgNjAgODAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDYwIDgwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6bm9uZTtzdHJva2U6I2ZmZjtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LnN0MXtmaWxsOm5vbmU7c3Ryb2tlOiNmZmY7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fS5zdDJ7ZmlsbDojMzMzMzMzO308L3N0eWxlPjxnIGlkPSJMYXllcl8xIj48ZyBpZD0iYXJyb3dfX3gzQ19feDNDX194M0NfIj48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjMsMjhsMTcuMSwxNC42TDIzLDU4Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTIzLDI0bDE3LjEsMTQuNkwyMyw1NCIvPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yMywyMGwxNy4xLDE0LjZMMjMsNTAiLz48L2c+PC9nPjxnIGlkPSJMYXllcl8yIj48L2c+PC9zdmc+');
+  }
+  @else if $color == 'black' {
+    @return url('data:image/svg+xml;utf8;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNjBweCIgaGVpZ2h0PSI4MHB4IiB2aWV3Qm94PSIwIDAgNjAgODAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDYwIDgwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO2ZpbGw6bm9uZTtzdHJva2U6IzAwMDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LnN0MXtmaWxsOm5vbmU7c3Ryb2tlOiMwMDA7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fS5zdDJ7ZmlsbDojMzMzMzMzO308L3N0eWxlPjxnIGlkPSJMYXllcl8xIj48ZyBpZD0iYXJyb3dfX3gzQ19feDNDX194M0NfIj48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjMsMjhsMTcuMSwxNC42TDIzLDU4Ii8+PHBhdGggY2xhc3M9InN0MCIgZD0iTTIzLDI0bDE3LjEsMTQuNkwyMyw1NCIvPjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yMywyMGwxNy4xLDE0LjZMMjMsNTAiLz48L2c+PC9nPjxnIGlkPSJMYXllcl8yIj48L2c+PC9zdmc+');
+  }
+}

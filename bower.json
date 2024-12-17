@@ -1,0 +1,10 @@
+{
+  "name": "sarychev-org",
+  "private": true,
+  "dependencies": {
+    "jquery": null,
+    "jquery-ui": null,
+    "backbone": null,
+    "underscore": null
+  }
+}

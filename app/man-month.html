@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Man-month — Maxim Sarychau</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="shortcut icon" href="/favicon.png">
+    <meta property="og:title" content="Man-month — Maxim Sarychau" />
+    <meta property="og:image" content="http://sarychau.com/photos/man-month/man_month_bg.jpg" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <div class="page-slider container">
+        <section class="menu">
+          @@include('scripts/templates/menu.html', {"manmonth": "active"})
+        </section>
+
+        <section class="content">
+          <div class="slider fading">
+            <ul class="slides" style="left:0">
+              <li class="description item" style="background-image:url(/photos/man-month/man_month_bg.jpg);">
+                <div class="container">
+                  <div class="two-column-text">
+                    <h1>Man-month</h1>
+                    <span class="subheader">2012 — 2014</span>
+                    <p>Being incorporated into the capitalist system, we consciously turn into a unified human resource with specified value. We sell our skills, energy, talent and most valuable and limited resource called time.<br><br>How much of living we lose during 8 working man-hours *?  And during one week or month?</p>
+                    <p> Our lives are priceless, but the cost per one person-year is easy to calculate, the same as each lost unit of vision.<br><br>These photos were taken via webcam during working conferences in which I participated. This project reminds about missed moments, which I wouldn’t like to have.
+                    </p>
+                    <div class="mark">* Man-hour — actual measure of worked hours, a unit of working time calculation in production tasks.</div>
+                  </div>
+                </div>
+              </li>
+              <li class="item">
+                <img src="/photos/man-month/man_month_1.jpg"/>
+              </li>              
+              <li class="item">
+                <img src="/photos/man-month/man_month_2.jpg"/>
+              </li>              
+              <li class="item">
+                <img src="/photos/man-month/man_month_3.jpg"/>
+              </li>              
+              <li class="item">
+                <img src="/photos/man-month/man_month_4.jpg"/>
+              </li>              
+              <li class="item">
+                <img src="/photos/man-month/man_month_5.jpg"/>
+              </li>              
+              <li class="item">
+                <img src="/photos/man-month/man_month_6.jpg"/>
+              </li>              
+              <li class="item">
+                <img src="/photos/man-month/man_month_7.jpg"/>
+              </li>              
+              <li class="item">
+                <img src="/photos/man-month/man_month_8.jpg"/>
+              </li>              
+              <li class="item">
+                <img src="/photos/man-month/man_month_9.jpg"/>
+              </li>              
+              <li class="item">
+                <img src="/photos/man-month/man_month_10.jpg"/>
+              </li>              
+              <li class="item">
+                <img src="/photos/man-month/man_month_11.jpg"/>
+              </li>              
+              <li class="item">
+                <img src="/photos/man-month/man_month_12.jpg"/>
+              </li>
+            </ul>
+            <div class="arrow back"></div>
+            <div class="arrow forward"></div>
+            <div class="pager">
+              <div class="container">
+                <p class="current"></p>
+                <p class="all"></p>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/models/slider-data.js"></script>
+    <script src="scripts/views/slider.js"></script>
+    <script src="scripts/page-slider.js"></script>
+    <script src="scripts/router.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
