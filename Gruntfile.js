@@ -20,7 +20,7 @@ module.exports = function (grunt) {
   // Configurable paths
   var config = {
     app: 'app',
-    dist: 'dist'
+    dist: 'docs'
   };
 
   // Define the configuration for all the tasks
@@ -154,7 +154,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '<%= config.app %>/styles',
           src: ['main.{scss,sass}'],
-          dest: 'dist/styles',
+          dest: 'docs/styles',
           ext: '.css'
         }]
       },
@@ -335,7 +335,7 @@ module.exports = function (grunt) {
         expand: true,
         dot: true,
         cwd: 'bower_components',
-        dest: 'dist/bower_components/',
+        dest: 'docs/bower_components/',
         src: ['**/*']
       },
       styles: {
@@ -376,7 +376,7 @@ module.exports = function (grunt) {
           // Task-specific options go here.
         },
         // Files to perform replacements and includes with
-        src: 'dist/**/*.html',
+        src: 'docs/**/*.html',
         // Destination directory to copy files to
         dest: './'
       },
