@@ -15,6 +15,7 @@ module.exports = function (grunt) {
 
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
+  grunt.loadNpmTasks('grunt-sass');
 
   // Configurable paths
   var config = {
@@ -145,6 +146,7 @@ module.exports = function (grunt) {
     // Compiles Sass to CSS and generates necessary files if requested
     sass: {
       options: {
+        implementation: require('sass'), 
         sourceMap: false
         },
       dist: {
