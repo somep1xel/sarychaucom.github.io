@@ -1,0 +1,72 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Food not bombs — Maxim Sarychau</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="shortcut icon" href="/favicon.png">
+    <meta property="og:title" content="Food not bombs — Maxim Sarychau" />
+    <meta property="og:image" content="http://sarychau.com/photos/msc/fnb_bg.jpg" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <div class="fnb page-text container about">
+      <section class="menu">
+        @@include('scripts/templates/menu.html', {"foodnotbombs": "active"})
+      </section>
+
+      <section class="content">
+        <div class="hero-image" style="background-image:url(/photos/msc/fnb_bg.jpg);">
+          <div class="headline">
+            <h1>Food not bombs</h1>
+            <p class="dates">MULTIMEDIA</p>
+          </div>
+        </div>
+        <div class="two-column-text long">
+          <p>Vitaly is a "Food Not Bombs" social movement activist from Belarus. He is a vegetarian with strong civic attitude. He participates in a hardcore undeground music band. Every Saturday morning since 2007 Vitaly and a few of his friends cook food on their own initiative to serve it to poor people of Minsk.<br><br>Such kind of activism is also the way to show enormous number of people in need, number of people with lack of such basics as hot meals.</p>
+
+          <p>So volunteers are trying to attract society's attention to poverty and homelessness. Probably that's why the FNB activists often become a target to local authorities' pressure.<br><br>It is not just a charity. This act of non-violent direct action is a personal attempt of activists to build a better society to live in — based on equality, solidarity and non-commercial affairs.</p>
+        </div>
+        <div class="video">
+          <iframe width="853" height="480" src="https://www.youtube.com/embed/IDgauDBWKgw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="text">
+        <h2>CREDITS</h2>
+        <ul class="credits"></ul>
+          <li>
+            <p><strong>Photography / Video / Direction</strong><br>Maksim Sarychau</p></li>
+          <li>
+            <p><strong>Music</strong><br>Lokai and from http://www.freesound.org</p>
+          </li>
+         <li>
+            <p><strong>Design</strong><br>Aksana Zinchanka</p></li>
+         <li>
+            <p><strong>Subtitles</strong><br>Maryia Zharnikova</p>
+         </li>
+        </div>
+      </section>
+    </div>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/models/slider-data.js"></script>
+    <script src="scripts/views/slider.js"></script>
+    <script src="scripts/page-slider.js"></script>
+    <script src="scripts/router.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
