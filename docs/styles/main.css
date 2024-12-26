@@ -8,19 +8,19 @@
 */
 @font-face {
   font-family: "HelveticaNeueCyr-Light";
-  src: url("/styles/fonts/HelveticaNeueCyr-Light.otf");
+  src: url("fonts/HelveticaNeueCyr-Light.otf");
 }
 @font-face {
   font-family: "HelveticaNeueCyr-LightItalic";
-  src: url("/styles/fonts/HelveticaNeueCyr-LightItalic.otf");
+  src: url("fonts/HelveticaNeueCyr-LightItalic.otf");
 }
 @font-face {
   font-family: "HelveticaNeueCyr-Roman";
-  src: url("/styles/fonts/HelveticaNeueCyr-Roman.otf");
+  src: url("fonts/HelveticaNeueCyr-Roman.otf");
 }
 @font-face {
   font-family: "HelveticaNeueCyr-Thin";
-  src: url("/styles/fonts/HelveticaNeueCyr-Thin.otf");
+  src: url("fonts/HelveticaNeueCyr-Thin.otf");
 }
 /* 
 * Variables for breakpoints, colors, fonts, etc.
@@ -659,7 +659,7 @@ body > span {
   padding-bottom: 50px;
 }
 .page-scroller .scroller .slides li.hero-image .arrow {
-  background-image: url(/images/arrow-scroll-white.png);
+  background-image: url(images/arrow-scroll-white.png);
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-transform: rotate(180deg);
@@ -983,7 +983,7 @@ body > span {
   top: 0;
 }
 .menu .header .logo {
-  background-image: url("/images/logo.svg");
+  background-image: url("../images/logo.svg");
   background-repeat: no-repeat;
   width: 115px;
   height: 39px;
@@ -1150,7 +1150,7 @@ body > span {
     height: 11px;
     margin-top: 13px;
     left: 267px;
-    background-image: url("/images/hamburger.png");
+    background-image: url("../images/hamburger.png");
     background-repeat: no-repeat;
     z-index: 2;
   }
@@ -1192,7 +1192,7 @@ body > span {
     left: 299px;
     width: 16px;
     height: 24px;
-    background-image: url("/images/menu_pointer.png");
+    background-image: url("../images/menu_pointer.png");
     background-repeat: no-repeat;
     z-index: 2;
   }
