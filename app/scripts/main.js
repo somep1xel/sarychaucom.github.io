@@ -2,9 +2,7 @@
 $(document).ready(function() {
     var router = new PageRouter();
     Backbone.history.start({
-        pushState: true,    // Enables HTML5 history mode (no hash in the URL)
-        root: '/sarychaucom.github.io/'  // Set this to the subdirectory of your GitHub Pages site
-      });
+        pushState: true      });
  });
 
 var menuToggler = function(){
