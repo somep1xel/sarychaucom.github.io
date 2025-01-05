@@ -1,5 +1,11 @@
-new PageRouter();
-Backbone.history.start({pushState: true});
+// Initialize the router
+$(document).ready(function() {
+    var router = new PageRouter();
+    Backbone.history.start({
+        pushState: true,    // Enables HTML5 history mode (no hash in the URL)
+        root: '/sarychaucom.github.io/'  // Set this to the subdirectory of your GitHub Pages site
+      });
+ });
 
 var menuToggler = function(){
     $(".menu").toggleClass("open");
@@ -29,7 +35,7 @@ $(".page-scroller .arrow").on("click", scrollPageToDescription);
 $(".fnb.page-text .content").on("scroll", menuHide);
 
 var ipLookUp = function(){
-    return $.get("http://ipinfo.io", function (response) {
+    return $.get("https://ipinfo.io", function (response) {
         return response.country;
     }, "jsonp").fail(function() {
     return false;
