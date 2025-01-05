@@ -177,7 +177,7 @@ body > span {
   }
 }
 .non-belarus {
-  display: none;
+  display: block;
 }
 
 .slider {
