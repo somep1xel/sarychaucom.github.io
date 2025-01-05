@@ -2,9 +2,9 @@
   "name": "sarychev-org",
   "private": true,
   "dependencies": {
-    "jquery": null,
+    "jquery": "3.6.0",
     "jquery-ui": null,
-    "backbone": null,
-    "underscore": null
+    "backbone": "1.4.1",
+    "underscore": "1.13.4"
   }
 }
