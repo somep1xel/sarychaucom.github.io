@@ -3,7 +3,7 @@ var PageRouter = Backbone.Router.extend({
     'index.html'  : 'homePage',
     'man-month.html'  : 'manMonthPage',
     'exhibitions.html'  : 'exhibitionsPage',
-    'docs/publications.html'  : 'publicationsPage',
+    'publications.html'  : 'publicationsPage',
     'a-hello-to-arms.html'  : 'aHelloArmsPage',
     'led-acquired-reflex.html'  : 'acquiredReflexPage',
     'portraits.html'  : 'portraitsPage',
