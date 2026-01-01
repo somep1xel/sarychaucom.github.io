@@ -1040,7 +1040,7 @@ body > span {
   display: none;
   background-color: #ddd;
   overflow: auto;
-  height: calc(100% - 180px);
+  height: calc(100% - 140px);
 }
 .menu .container ul {
   display: block;
@@ -1165,13 +1165,13 @@ body > span {
   }
   .menu .header {
     position: relative;
-    height: 180px;
+    height: 140px;
     width: 100%;
   }
   .menu .header .logo {
     width: 202px;
     height: 64px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 45px;
   }
   .menu .header .hamburger {
@@ -1179,14 +1179,13 @@ body > span {
   }
   .menu .container {
     display: block;
-    padding-top: 30px;
     padding-left: 50px;
     background-color: #f3f3f3;
     overflow: scroll;
   }
   .menu .container ul {
     width: 100%;
-    padding-bottom: 45px;
+    padding-bottom: 10px;
   }
   .menu .container ul li {
     text-align: left;
@@ -1216,7 +1215,6 @@ body > span {
     width: 250px;
     bottom: 0;
     padding: 0;
-    margin-bottom: 40px;
   }
 }
 @media (min-width: 1400px) and (min-height: 1400px) {
