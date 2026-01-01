@@ -612,6 +612,15 @@ body > span {
 .page-slider .slider .slides li.item img.internal {
   max-width: 100%;
 }
+.page-slider .slider .slides li.item .item-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* аналог background-size: cover */
+  z-index: 1;
+}
 .page-slider h1 {
   text-transform: uppercase;
 }

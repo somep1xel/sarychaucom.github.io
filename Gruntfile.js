@@ -122,7 +122,11 @@ module.exports = function (grunt) {
           src: [
             '.tmp',
             '<%= config.dist %>/*',
-            '!<%= config.dist %>/.git*'
+            '!<%= config.dist %>/.git*',
+        '!<%= config.dist %>/undercover-artists',
+        '!<%= config.dist %>/undercover-artists/**',
+        '!<%= config.dist %>/undercover-artists-en',
+        '!<%= config.dist %>/undercover-artists-en/**',
           ]
         }]
       },
@@ -314,6 +318,7 @@ module.exports = function (grunt) {
           cwd: '<%= config.app %>',
           dest: '<%= config.dist %>',
           src: [
+            'CNAME',
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
@@ -325,6 +330,10 @@ module.exports = function (grunt) {
             'exhibitions/{,*/}*.*',
             'publications/{,*/}*.*',
             'ch/{,*/}*.*',
+            '!undercover-artists',
+            '!undercover-artists/**',
+            '!undercover-artists-en',
+            '!undercover-artists-en/**'
           ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
