@@ -1,0 +1,1 @@
+import{a,b}from"https://st-p.rmcdn1.net/a0d820ba/dist/c/c-MQY3KGFC.js";import"https://st-p.rmcdn1.net/a0d820ba/dist/c/c-HGL2PH75.js";import"https://st-p.rmcdn1.net/a0d820ba/dist/c/c-QUUKQAKA.js";import"https://st-p.rmcdn1.net/a0d820ba/dist/c/c-EBIRYJKC.js";import"https://st-p.rmcdn1.net/a0d820ba/dist/c/c-LS5S5GHU.js";b();export{a as getWebVitals};

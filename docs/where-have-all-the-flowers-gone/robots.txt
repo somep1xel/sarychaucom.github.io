@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://sarychau.com/sitemap.xml
+Sitemap: https://sarychau.com/sitemap.xml

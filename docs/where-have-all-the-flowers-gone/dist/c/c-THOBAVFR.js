@@ -1,0 +1,1 @@
+import"https://st-p.rmcdn1.net/a0d820ba/dist/c/c-LS5S5GHU.js";var t=({widget:e})=>{e&&e.isDragging&&(e.isDragging=!1,e.mag.isWidgetDragging=!1,document.body.style.pointerEvents==="none"&&(document.body.style.pointerEvents=""))},o=t;export{o as default};
