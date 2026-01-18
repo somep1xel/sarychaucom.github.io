@@ -1078,7 +1078,9 @@ body > span {
   text-decoration: none;
   font-size: 18px;
   font-family: HelveticaNeueCyr-Light;
-  height: 35px;
+  /*height: 35px;*/
+  height: auto;
+  line-height: 1.5;
   display: block;
 }
 .menu .container .projects:before,
