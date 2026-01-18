@@ -123,10 +123,14 @@ module.exports = function (grunt) {
             '.tmp',
             '<%= config.dist %>/*',
             '!<%= config.dist %>/.git*',
+        '!<%= config.dist %>/where-have-all-the-flowers-gone',
+        '!<%= config.dist %>/where-have-all-the-flowers-gone-ru',
         '!<%= config.dist %>/undercover-artists',
         '!<%= config.dist %>/undercover-artists/**',
         '!<%= config.dist %>/undercover-artists-en',
         '!<%= config.dist %>/undercover-artists-en/**',
+        '!<%= config.dist %>/where-have-all-the-flowers-gone/**',
+        '!<%= config.dist %>/where-have-all-the-flowers-gone-ru/**'
           ]
         }]
       },
@@ -331,7 +335,11 @@ module.exports = function (grunt) {
             'publications/{,*/}*.*',
             'ch/{,*/}*.*',
             '!undercover-artists',
+            '!where-have-all-the-flowers-gone',
+            '!where-have-all-the-flowers-gone-en',
             '!undercover-artists/**',
+            '!where-have-all-the-flowers-gone/**',
+            '!where-have-all-the-flowers-gone-en/**',
             '!undercover-artists-en',
             '!undercover-artists-en/**'
           ]
